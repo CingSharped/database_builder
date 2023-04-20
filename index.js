@@ -27,14 +27,14 @@ countryList.forEach(element => {
 
 function combineStats(countryName) {
     let flag = findCountry(countryName, flags);
-    let expectency = findCountry(countryName, lifeExpectancy);
+    let expectancy = findCountry(countryName, lifeExpectancy);
     let area = findCountry(countryName, surfaceArea);
     let temp = findCountry(countryName, averageTemp);
     let pop = findCountry(countryName, population);
     let established = findCountry(countryName, establishment);
     // Merge country data
 
-    database.push({id, ...flag, ...expectency, ...area, ...temp, ...pop, ...established});
+    database.push({id, ...flag, ...expectancy, ...area, ...temp, ...pop, ...established});
     id++;
 }
 
